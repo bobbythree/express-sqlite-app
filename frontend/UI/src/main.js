@@ -7,7 +7,6 @@ form.addEventListener('submit', async (e) => {
 
   const name = nameInput.value;
   const reason = reasonInput.value;
-  console.log("name", name, "reason", reason);
 
   if (!name || !reason) {
     alert('Please provide both a Name and a Reason');
@@ -31,7 +30,6 @@ form.addEventListener('submit', async (e) => {
     }
 
     const responseData = await response.json();
-    console.log(responseData);
     nameInput.value = '';
     reasonInput.value = '';
 
